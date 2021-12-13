@@ -1,0 +1,28 @@
+.post__list {
+  width: 100%;
+  padding: 20px;
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 20px;
+  margin-top: 15px;
+  border: 1px solid orange;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+  border: 1px solid teal;
+  margin-top: 15px;
+}
+
+.w100 {
+  width: 100%;
+}
