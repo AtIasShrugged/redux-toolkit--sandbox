@@ -1,15 +1,15 @@
-import "./App.css";
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "./hooks/redux";
 import { userSlice } from "./store/reducers/UserSlice";
+import { fetchUsers } from "./store/reducers/ActionCreators";
+import { PostContainer } from "./components/PostContainer";
+
+import "./App.css";
 
 function App() {
-  const { count } = useAppSelector((state) => state.userReducer);
-  const { increment } = userSlice.actions;
-  const dispatch = useAppDispatch();
   return (
     <div className="App">
-      <h1>{count}</h1>
-      <button onClick={() => dispatch(increment(1))}>Increment</button>
+      <PostContainer />
     </div>
   );
 }
